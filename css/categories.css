@@ -1,3 +1,8 @@
+.categories .section-title {
+    width: 312px;
+    margin: 88px auto 0;
+}
+
 .categories-cards {
     display: flex;
     flex-direction: column;
@@ -28,4 +33,28 @@
 
 .categories-cards .card.single-line.tranfer {
     margin: 10px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .categories-cards .section-title{
+        width: 100%;
+    }
+
+    .categories-cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .categories-cards .card {
+        width: 430px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .categories-cards .card {
+        width: 280px;
+    }
 }
